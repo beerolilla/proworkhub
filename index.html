@@ -34,7 +34,7 @@
             <div class="logo">
             <img src="logofull.svg" alt="">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a href="#form"><div class="cta-button">CTA gomb</div></a>
+        <a href="#form" class="cta-button">CTA gomb</a>
         </div>
         </section>
     </div>
@@ -63,7 +63,7 @@
     </section>
     <section id="marketing-cta">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <a href="#form"><div class="cta-button">CTA gomb</div></a>
+        <a href="#form" class="cta-button">CTA gomb</a>
     </section>
 
     <section id="offices">
@@ -74,7 +74,7 @@
         </div>
 
         <div class="office-left">
-            <h3>"A" iroda</h3>
+            <h3>"A" Szolgáltatás</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
@@ -86,7 +86,7 @@
         </div>
 
         <div class="office-left">
-            <h3>"B" iroda</h3>
+            <h3>"B" Szolgáltatás</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
@@ -98,7 +98,19 @@
         </div>
 
         <div class="office-left">
-            <h3>"C" iroda</h3>
+            <h3>"C" Szolgálátatás</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+
+    <div class="office-row reverse">
+        <div class="image-left">
+            <img src="split2.jpeg" alt="">
+        </div>
+
+        <div class="office-left">
+            <h3>"D" Szolgáltatás</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
@@ -141,24 +153,24 @@
             <div class="form-row">
                 <div class="form-group">
                     <label for="lname">Vezetéknév</label>
-                    <input type="text" id="lname" name="lname" placeholder="Minta" required>
+                    <input type="text" id="lname" name="lname" placeholder="Minta" required autocomplete="family-name">
                 </div>
 
                 <div class="form-group">
                     <label for="fname">Keresztnév</label>
-                    <input type="text" id="fname" name="fname" placeholder="János" required>
+                    <input type="text" id="fname" name="fname" placeholder="János" required autocomplete="given-name">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
                     <label for="phone">Telefonszám</label>
-                    <input type="tel" id="phone" name="phone" placeholder="+36 12 345 6789">
+                    <input type="tel" id="phone" name="phone" placeholder="+36 12 345 6789" autocomplete="tel">
                 </div>
 
                 <div class="form-group">
                     <label for="mail">E-mail cím</label>
-                    <input type="email" id="mail" name="mail" placeholder="minta@minta.hu" required>
+                    <input type="email" id="mail" name="mail" placeholder="minta@minta.hu" autocomplete="email">
                 </div>
             </div>
 
@@ -199,5 +211,7 @@
     </div>
 
 </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
