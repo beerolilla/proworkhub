@@ -325,7 +325,9 @@ section { scroll-margin-top: 80px; }
   min-height: 500px;
 }
 
-.office-row.reverse { flex-direction: row-reverse; }
+.office-row.reverse {
+  flex-direction: row-reverse; 
+}
 
 .office-left {
   width: 50%;
@@ -348,14 +350,25 @@ section { scroll-margin-top: 80px; }
   overflow: hidden;
 }
 
-.image-left img {
+.image-inner {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+}
+
+.image-inner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
   transition: transform 0.9s ease;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.office-row:hover .image-left img {
+.office-row:hover .image-inner img {
   transform: scale(1.025);
 }
 
